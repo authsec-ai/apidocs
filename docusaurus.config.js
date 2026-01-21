@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'AuthSec API Documentation',
   tagline: 'Multi-tenant RBAC authentication and user management API',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -116,10 +116,6 @@ const config = {
           {
             title: 'Documentation',
             items: [
-              {
-                label: 'Get Started',
-                to: '/docs/intro',
-              },
               {
                 label: 'User Management',
                 to: '/docs/user-management/overview',
