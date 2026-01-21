@@ -1,0 +1,8 @@
+{
+  "label": "Auth Manager",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Auth Manager API provides authentication and authorization services. Generates, verifies JWT tokens with scope/resource validation."
+  }
+}

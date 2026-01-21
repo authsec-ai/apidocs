@@ -1,0 +1,8 @@
+{
+  "label": "User Management",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Comprehensive API documentation for user management endpoints including admin users, end users, authentication, and authorization."
+  }
+}
