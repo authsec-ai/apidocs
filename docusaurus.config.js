@@ -80,88 +80,22 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
-        defaultMode: 'dark',
-        disableSwitch: false,
+        defaultMode: 'light',
+        disableSwitch: true,
         respectPrefersColorScheme: false,
       },
       navbar: {
-        title: 'AuthSec API',
+        title: 'AuthSec',
+        logo: {
+          alt: 'AuthSec Logo',
+          src: 'img/logo.png',
+          width: 28,
+          height: 28,
+          href: 'https://authsec.ai',
+          target: '_blank',
+        },
         hideOnScroll: false,
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Documentation',
-          },
-          {
-            type: 'search',
-            position: 'right',
-          },
-          {
-            href: 'https://dev.api.authsec.dev',
-            label: 'API Reference',
-            position: 'right',
-          },
-          {
-            href: 'https://github.com/authsec',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Documentation',
-            items: [
-              {
-                label: 'User Management',
-                to: '/docs/user-management/overview',
-              },
-              {
-                label: 'API Reference',
-                href: 'https://dev.api.authsec.dev/uflow/redoc',
-              },
-            ],
-          },
-          {
-            title: 'Resources',
-            items: [
-              {
-                label: 'Help Center',
-                href: 'https://authsec.ai/support',
-              },
-              {
-                label: 'Developer Forum',
-                href: 'https://community.authsec.ai',
-              },
-              {
-                label: 'Status',
-                href: 'https://status.authsec.dev',
-              },
-            ],
-          },
-          {
-            title: 'Company',
-            items: [
-              {
-                label: 'About',
-                href: 'https://authsec.ai',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/authsec',
-              },
-              {
-                label: 'Contact',
-                href: 'mailto:support@authsec.ai',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} AuthSec.ai. All rights reserved.`,
+        items: [],
       },
       prism: {
         theme: prismThemes.github,

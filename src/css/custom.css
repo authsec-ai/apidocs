@@ -300,3 +300,18 @@ a, button, .navbar__link {
   border-radius: var(--ifm-global-radius);
 }
 
+/* Navbar logo and title styling to match footer */
+.navbar__logo img {
+  opacity: 0.9;
+}
+
+.navbar__title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: #000;
+}
+
+[data-theme='dark'] .navbar__title {
+  color: #000;
+}

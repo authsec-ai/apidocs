@@ -1,11 +1,12 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import { Lock, Shield, Key, RefreshCw, Zap, Code } from 'lucide-react';
 
 const FeatureList = [
   {
     title: 'Multi-Tenant User Management',
-    image: '🔐',
+    icon: Lock,
     description: (
       <>
         Complete user lifecycle management with multi-tenant isolation, RBAC permissions,
@@ -15,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Advanced Authentication',
-    image: '🛡️',
+    icon: Shield,
     description: (
       <>
         Secure authentication flows with JWT tokens, refresh tokens, password reset,
@@ -25,7 +26,7 @@ const FeatureList = [
   },
   {
     title: 'Multi-Factor Authentication',
-    image: '🔑',
+    icon: Key,
     description: (
       <>
         Enhanced security with TOTP, WebAuthn, and CIBA authentication methods.
@@ -35,7 +36,7 @@ const FeatureList = [
   },
   {
     title: 'Directory Synchronization',
-    image: '🔄',
+    icon: RefreshCw,
     description: (
       <>
         Seamlessly sync with Active Directory and Microsoft Entra ID.
@@ -45,7 +46,7 @@ const FeatureList = [
   },
   {
     title: 'RESTful API Design',
-    image: '⚡',
+    icon: Zap,
     description: (
       <>
         Clean, intuitive REST API with comprehensive documentation.
@@ -55,7 +56,7 @@ const FeatureList = [
   },
   {
     title: 'Developer-Friendly',
-    image: '💻',
+    icon: Code,
     description: (
       <>
         Detailed API documentation, code examples, and interactive testing.
@@ -65,12 +66,12 @@ const FeatureList = [
   },
 ];
 
-function Feature({image, title, description}) {
+function Feature({icon: Icon, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className={styles.featureCard}>
         <div className={styles.featureIcon}>
-          <span className={styles.iconEmoji}>{image}</span>
+          <Icon className={styles.iconSvg} />
         </div>
         <div className={styles.featureContent}>
           <Heading as="h3">{title}</Heading>
